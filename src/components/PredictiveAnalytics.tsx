@@ -4,8 +4,8 @@ import {
   XAxis, YAxis, Tooltip, ResponsiveContainer
 } from "recharts";
 import {
-  Badge, Card, CardHeader, CardContent,
-  Tabs, TabsList, TabsTrigger, TabsContent,
+  Badge, Card, CardHeader, CardBody,
+  Tabs, TabList, Tab, TabsContent,
   Label, Select, SelectTrigger, SelectValue,
   Slider, Button, ScrollArea
 } from "your-ui-library"; // ← adjust to your actual UI package
@@ -70,7 +70,7 @@ const PredictiveAnalytics: React.FC = () => {
         <CardHeader>
           <h2>NSV Forecast vs Actual</h2>
         </CardHeader>
-        <CardContent>
+        <CardBody>
           <ResponsiveContainer width="100%" height={300}>
             <ComposedChart data={[...historicalData, ...forecastData]}>
               <CartesianGrid strokeDasharray="3 3" />
@@ -84,13 +84,13 @@ const PredictiveAnalytics: React.FC = () => {
               <Line dataKey="scenario" stroke="#FF6B35" dot />
             </ComposedChart>
           </ResponsiveContainer>
-        </CardContent>
+        </CardBody>
       </Card>
 
       {/* Alerts */}
       <Card>
         <CardHeader><h3>Data Quality Alerts</h3></CardHeader>
-        <CardContent>
+        <CardBody>
           <ScrollArea className="h-48">
             {alerts.map((a, i) => (
               <div key={i} className="p-2 border-b">
@@ -99,7 +99,7 @@ const PredictiveAnalytics: React.FC = () => {
               </div>
             ))}
           </ScrollArea>
-        </CardContent>
+        </CardBody>
       </Card>
     </div>
   );
