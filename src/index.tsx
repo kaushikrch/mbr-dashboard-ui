@@ -1,12 +1,12 @@
-// main.tsx (or index.tsx)
-
+// src/index.tsx
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
-import { ChakraProvider } from "@chakra-ui/react"
+import "./index.css"; // your Tailwind imports
 
-ReactDOM.createRoot(document.getElementById("root")!).render(
-  <ChakraProvider>
+const root = ReactDOM.createRoot(document.getElementById("root")!);
+root.render(
+  <React.StrictMode>
     <App />
-  </ChakraProvider>
-)
+  </React.StrictMode>
+);
