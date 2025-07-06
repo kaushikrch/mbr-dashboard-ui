@@ -7,7 +7,7 @@ import {
   Badge, Card, CardHeader, CardBody,
   Tabs, TabList, Tab, TabsContent,
   Label, Select, SelectTrigger, SelectValue,
-  Slider, Button, ScrollArea
+  Slider, Button, Box
 } from "@chakra-ui/react"; // ← adjust to your actual UI package
 
 const API_BASE = process.env.REACT_APP_API_BASE!;
@@ -91,14 +91,14 @@ const PredictiveAnalytics: React.FC = () => {
       <Card>
         <CardHeader><h3>Data Quality Alerts</h3></CardHeader>
         <CardBody>
-          <ScrollArea className="h-48">
+          <Box maxH="48" overflowY="auto" p={2}>
             {alerts.map((a, i) => (
               <div key={i} className="p-2 border-b">
                 <p className="text-sm">{a.message}</p>
                 <p className="text-xs text-gray-500">Impact: {a.impact}, Confidence: {a.confidence}</p>
               </div>
             ))}
-          </ScrollArea>
+          </Box>
         </CardBody>
       </Card>
     </div>
