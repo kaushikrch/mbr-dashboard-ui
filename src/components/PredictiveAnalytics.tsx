@@ -78,11 +78,11 @@ const PredictiveAnalytics: React.FC = () => {
   return (
     <Box className="space-y-3 max-w-7xl mx-auto h-full overflow-hidden">
       {/* NSV Forecast vs Actual Chart */}
-      <Card>
-        <CardHeader>
+      <Card.Root>
+        <Card.Header>
           <h2>NSV Forecast vs Actual</h2>
-        </CardHeader>
-        <CardBody>
+        </Card.Header>
+        <Card.Body>
           <ResponsiveContainer width="100%" height={300}>
             <ComposedChart data={[...historicalData, ...forecastData]}>
               <CartesianGrid strokeDasharray="3 3" />
@@ -109,15 +109,15 @@ const PredictiveAnalytics: React.FC = () => {
               <Line dataKey="scenario" stroke="#FF6B35" dot />
             </ComposedChart>
           </ResponsiveContainer>
-        </CardBody>
-      </Card>
+        </Card.Body>
+      </Card.Root>
 
       {/* Data Quality Alerts */}
-      <Card>
-        <CardHeader>
+      <Card.Root>
+        <Card.Header>
           <h3>Data Quality Alerts</h3>
-        </CardHeader>
-        <CardBody>
+        </Card.Header>
+        <Card.Body>
           <Box maxH="48" overflowY="auto" p={2}>
             {alerts.map((a, i) => (
               <div key={i} className="p-2 border-b">
@@ -128,8 +128,8 @@ const PredictiveAnalytics: React.FC = () => {
               </div>
             ))}
           </Box>
-        </CardBody>
-      </Card>
+        </Card.Body>
+      </Card.Root>
     </Box>
   );
 };
