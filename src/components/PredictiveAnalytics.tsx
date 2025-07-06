@@ -2,14 +2,14 @@
 import React, { useState, useEffect } from "react";
 import { 
   Card, CardHeader, CardContent, CardTitle, CardDescription 
-} from "@/components/ui/card";
-import { Button }       from "@/components/ui/button";
-import { Badge }        from "@/components/ui/badge";
-import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
-import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "@/components/ui/select";
-import { Slider }       from "@/components/ui/slider";
-import { Label }        from "@/components/ui/label";
-import { ScrollArea }   from "@/components/ui/scroll-area";
+} from "components/ui/card";
+import { Button }       from "components/ui/button";
+import { Badge }        from "components/ui/badge";
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "components/ui/tabs";
+import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "components/ui/select";
+import { Slider }       from "components/ui/slider";
+import { Label }        from "components/ui/label";
+import { ScrollArea }   from "components/ui/scroll-area";
 
 import {
   TrendingUp, Target, AlertTriangle, Zap,
