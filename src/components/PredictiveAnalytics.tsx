@@ -12,6 +12,7 @@ import {
 import { Box, Card} from "@chakra-ui/react";
 
 const API_BASE = process.env.REACT_APP_API_BASE!;
+console.log("🛰️ API_BASE =", API_BASE);
 
 // Alert interface
 interface Alert {
