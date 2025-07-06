@@ -9,7 +9,7 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
-import { Box, Card, CardHeader, CardBody } from "@chakra-ui/react";
+import { Box, Card} from "@chakra-ui/react";
 
 const API_BASE = process.env.REACT_APP_API_BASE!;
 
