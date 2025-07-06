@@ -8,7 +8,7 @@ import {
   Tabs, TabList, Tab, TabsContent,
   Label, Select, SelectTrigger, SelectValue,
   Slider, Button, ScrollArea
-} from "your-ui-library"; // ← adjust to your actual UI package
+} from "@chakra-ui/react"; // ← adjust to your actual UI package
 
 const API_BASE = process.env.REACT_APP_API_BASE!;
 
