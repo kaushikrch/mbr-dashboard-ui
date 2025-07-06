@@ -5,7 +5,7 @@ import {
 } from "recharts";
 import {
   Badge, Card, CardHeader, CardBody,
-  Tabs, TabList, Tab, TabsContent,
+  Tabs, TabsList, Tab, TabsContent,
   Label, Select, SelectTrigger, SelectValue,
   Slider, Button, Box
 } from "@chakra-ui/react"; // ← adjust to your actual UI package
