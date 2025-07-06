@@ -2,18 +2,11 @@
 
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { ChakraProvider, defaultSystem } from "@chakra-ui/react";
 import App from "./App";
+import { ChakraProvider } from "@chakra-ui/react"
 
-const root = ReactDOM.createRoot(
-  document.getElementById("root") as HTMLElement
-);
-
-root.render(
-  <React.StrictMode>
-    {/* pass defaultSystem here so TypeScript is happy */}
-    <ChakraProvider value={defaultSystem}>
-      <App />
-    </ChakraProvider>
-  </React.StrictMode>
-);
+ReactDOM.createRoot(document.getElementById("root")!).render(
+  <ChakraProvider>
+    <App />
+  </ChakraProvider>
+)
