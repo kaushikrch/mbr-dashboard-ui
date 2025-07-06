@@ -6,7 +6,7 @@ import {
 import {
   Badge, Card, CardHeader, CardBody,
   Tabs, TabsList, TabsContent,
-  Label, Select, SelectTrigger, SelectValue,
+  Select, SelectTrigger, SelectValue,
   Slider, Button, Box
 } from "@chakra-ui/react"; // ← adjust to your actual UI package
 
