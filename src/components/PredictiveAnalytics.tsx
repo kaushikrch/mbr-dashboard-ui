@@ -39,6 +39,8 @@ const COLORS = ["#D22630", "#3182ce", "#38a169", "#dd6b20", "#805ad5"];
 
 const PredictiveAnalytics: React.FC = () => {
   const API = import.meta.env.VITE_API_BASE; // e.g. https://…/json
+
+  console.log("VITE_API_BASE", import.meta.env.VITE_API_BASE);
   const [brand, setBrand]   = useState("all");
   const [mediaSpend, setMediaSpend]   = useState([0]);
   const [priceChange, setPriceChange] = useState([0]);
