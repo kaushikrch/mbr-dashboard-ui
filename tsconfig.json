@@ -4,6 +4,8 @@
     "module": "ESNext",
     "jsx": "react-jsx",
     "strict": true,
+
+    // ← THIS:
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]

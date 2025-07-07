@@ -1,14 +1,21 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import tsconfigPaths from "vite-tsconfig-paths";
+import path from "path";
 
 export default defineConfig({
   plugins: [
-    react(),           // React Fast Refresh in dev
-    tsconfigPaths()    // honor the tsconfig “@/*” alias
+    react(),         // React Refresh in dev
+    tsconfigPaths()  // pick up your tsconfig “@/*” mapping
   ],
+  resolve: {
+    alias: {
+      // make sure @ always points at your src/ folder
+      "@": path.resolve(__dirname, "src")
+    }
+  },
   define: {
-    // expose process.env if needed
+    // if you rely on process.env anywhere
     "process.env": {}
   }
 });
