@@ -4,6 +4,7 @@ import tsconfigPaths from "vite-tsconfig-paths";
 import path from "path";
 
 export default defineConfig({
+  base: "/",
   plugins: [
     react(),         // React Refresh in dev
     tsconfigPaths()  // pick up your tsconfig “@/*” mapping
