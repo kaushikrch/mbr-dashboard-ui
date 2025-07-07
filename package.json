@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "vite",             // local dev server w/ HMR
-    "build": "vite build",     // optimized production build → dist/
-    "preview": "vite preview", // serve the production build locally
-    "test": "vitest"           // or your preferred test runner
+    "dev": "vite",             
+    "build": "vite build",     
+    "preview": "vite preview", 
+    "test": "vitest"          
   },
   "dependencies": {
     "react": "^19.1.0",
@@ -24,8 +24,8 @@
     "vite": "^4.0.0",
     "@vitejs/plugin-react": "^4.0.0",
     "vite-tsconfig-paths": "^4.0.0",
-    "vitest": "^0.31.0",                // if you want testing
-    "@testing-library/react": "^14.0.0",// compatible with Vitest
+    "vitest": "^0.31.0",               
+    "@testing-library/react": "^14.0.0",
     "@testing-library/jest-dom": "^6.0.0"
   },
   "browserslist": [
